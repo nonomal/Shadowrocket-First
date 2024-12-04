@@ -1,66 +1,158 @@
+[![README in English](https://img.shields.io/static/v1?label=README&message=in%20English&color=grey&logo=googletranslate&logoColor=white&labelColor=%239A6700&messageColor=white)](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://github.com/LOWERTOP/Shadowrocket-First/blob/main/README.md "README in English via Google Translate")
+
 <img src="https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/img/01.png" width="100%" height="100%">
 
-> [!NOTE]
-> 本仓库主要为 ` Shadowrocket ` ` 小火箭 ` 相关内容，提供一些自制/收集而来的 ` 小火箭配置文件 ` ` 小火箭模块 ` ` 小火箭规则集 ` ` 小火箭脚本 ` 等配置，同时提供多种自主设计的 ` 小火箭配色/主题/皮肤 `
-
 > [!WARNING]
-> 禁止使用本仓库内的任何内容牟利！转载请务必 ` 注明来源 ` 或 ` 标明作者 `
+> __警告：禁止使用本仓库内的任何内容牟利！如需转载请务必 ` 标明作者 ` 或 ` 注明来源 `__
 >
-> __没错，说的就你！小火箭网站都假冒的小偷！__
->
-> __提醒：小火箭没有官网！__ [唯一官方介绍页面](https://shadowlaunch.com/)
+>> 没错！就你！连小火箭网站都假冒的小偷！
+>>
+>> 提醒：小火箭没官网！ [唯一官方介绍页面](https://shadowlaunch.com/)
 
-> ` 本仓更新时间：2024-11-17 `
+------
+
+## [Shadowrocket-First 仓库自述](https://github.com/LOWERTOP/Shadowrocket-First)
+
+[![GitHub stars][stars-image]][stars-url]
+[![GitHub forks][forks-image]][forks-url]
+[![Telegram LOWERTOP](https://img.shields.io/static/v1?label=Telegram&message=LOWERTOP&color=blue&logo=telegram&logoColor=white&labelColor=grey&messageColor=white)](https://t.me/LowerTopBot "联系方式")
+
+[stars-url]: https://github.com/LOWERTOP/Shadowrocket-First/stargazers "已被星标次数"
+[stars-image]: https://img.shields.io/github/stars/LOWERTOP/Shadowrocket-First?style=static&logo=github&label=Star
+
+[forks-url]: https://github.com/LOWERTOP/Shadowrocket-First/network/members "已被复刻次数"
+[forks-image]: https://img.shields.io/github/forks/LOWERTOP/Shadowrocket-First?style=static&logo=github&label=Fork
+
+> [!NOTE]
+> 本仓库主要为 ` Shadowrocket/小火箭 ` 相关内容，提供一些自制/收集而来的 ` 配置文件 ` ` 模块 ` ` 规则集 ` ` 脚本 ` 等配置，同时提供多种自主设计的 ` 小火箭配色/主题/皮肤 `
+> 
+> [![交流群组 Shadowrocket](https://img.shields.io/static/v1?label=交流群组&message=Shadowrocket&color=blue&logo=telegram&logoColor=white&labelColor=grey&messageColor=white)](https://t.me/ShadowrocketApp "Shadowrocket 官方频道")
+
+> ` 项目目录 `
+>> * ` 01 ` · [Shadowrocket 自制配置](#shadowrocket-自制配置)
+>> * ` 02 ` · [Shadowrocket 收集配置](#shadowrocket-收集配置)
+>> * ` 03 ` · [Shadowrocket 配色文件](#shadowrocket-配色文件)
+>> * ` 04 ` · [非标准链接的重定向跳转](#url-redirector-非标准链接重定向跳转)
+>
+> ` 近期更新 `
+>> * 新增 ` 配色文件 ` 至 28 个，其中 ` 亮底色 / 暗底色 ` 各 14 个
+>> * 新增 ` 快捷指令 ` 安装[配色](#shadowrocket-配色文件)，作者：[iab](https://t.me/iab000)
+>> * 新增 ` 各类链接 ` 经 HTTP 进行[重定向跳转服务](#url-redirector-非标准链接重定向跳转)，含 ` URL-Schemes 跳转 `
+>> * 新增 [TCP 缓冲区在线计算器](https://lowertop.github.io/Shadowrocket-First/TCP-Cal.html) 用来调优 VPS TCP 缓冲区 [原仓库](https://github.com/BlackSheep-cry/TCP-Optimization-Tool) [调优原帖](https://www.nodeseek.com/post-197087-1)
+>> * 新增 ` CMCCiTV 咪咕直播源模块 ` ` Beta ` 使[非移动用户可以使用咪咕直播源](#shadowrocket-自制配置)
+>> * 新增 ` 模块合集 ` 热心群友提供的模块改写[网页](https://shadowrocket.module.sagg.us.kg "模块大合集")
+>> * 新增 ` 小火箭 URL-Schemes ` [复制粘贴更方便](#url-redirector-非标准链接重定向跳转)
+>
+> ` 更新时间 `
+2024-12-04 16:19
 
 ------
 
 ## Shadowrocket 自制配置
 
 > [!NOTE]
-> 本单元为自制内容，仅为 ` 特定软件或服务 ` 所用，如无需要可直接略过
+> 本单元为自制内容，是为 ` 特定软件或服务 ` 所用，如有需要请自行取用
 
-> 1. [Talkatone 代理规则模块（含去广告）](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/Talkatone.sgmodule) 
+>__` Talkatone `__
 >
-> 2. [Talkatone 去广告规则集](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/TalkatoneAntiAds.list)
+>> 在中国大陆境内使用 Talkatone 服务，推荐使用小火箭加载本仓库中的 [代理模块](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/Talkatone.sgmodule) 使用，该模块可以减少该 APP 对不同代理节点的敏感性。由于 Talkatone 的特殊性，在使用时需要对特殊地址进行代理，而对其他地址进行直连，通过模块进行分流是最合理的选择。该模块还附带去广告规则，能够去除 APP 中的部分第三方广告。同时，除模块外本页还提供该服务的 [直连规则集](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/TalkatoneDirect.list) 、[代理规则集](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/TalkatoneProxy.list) 、[去广告规则集](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/TalkatoneAntiAds.list) 等，相关用法请查阅规则集内的说明
+>> 
+>>_本模块仅适用于 Talkatone 登陆后使用，不适用于软件注册_
+>> 
+>> [![安装模块 Talkatone](https://img.shields.io/static/v1?label=安装模块&message=Talkatone&color=grey&logo=rocket&logoColor=white&labelColor=blue&messageColor=white)](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://install?module=https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/Talkatone.sgmodule "一键安装本模块")
 >
-> 3. [Talkatone 代理规则集](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/TalkatoneProxy.list)
+>__` Ultra Mobile PayGo WiFiCalling `__
 >
-> 4. [Ultra Mobile WiFiCalling 配置模块](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/UltraMobileWiFiCalling.sgmodule)
+>> Ultra Mobile Paygo WiFi Calling 相关配置，适用于 Ultra Mobile SIM 卡的 WiFi Calling 功能，或可适用于 T-Mobile Pay As You Go SIM 卡。本文推荐使用本仓库中的 [代理模块](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/UltraMobileWiFiCalling.sgmodule) 进行处理。使用本模块后打开飞行模式后再关闭飞行模式进行联网即可正常开启 WiFi calling，并可正常使用小火箭的配置模式。本文同时提供相关服务的 [代理规则集](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/UltraMobileWiFiCalling.list) ，如有需要请自行取用
+>>
+>> [![安装模块 UltraMobile](https://img.shields.io/static/v1?label=安装模块&message=UltraMobile&color=grey&logo=rocket&logoColor=white&labelColor=blue&messageColor=white)](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://install?module=https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/UltraMobileWiFiCalling.sgmodule "一键安装本模块")
 >
-> 5. [Ultra Mobile WiFiCalling 配置规则集](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/UltraMobileWiFiCalling.list)
-
+>__` CMCCiTV 咪咕直播源模块 ` ` Beta `__
+>
+>> 群友 ["---///"")/"](https://t.me/insterestingtimes) 咨询了一个 [APTV](https://t.me/AptvPlayer) 全运营商使用移动咪咕直播源观看 IPTV 的问题。原方案是 [PIXMAN](https://pixman.io/) 的 [Coding](https://pixman.io/coding) 提供的 [自制DNS映射](https://pixman.io/topics/37) 方案，并由 [YanG-1989](https://github.com/YanG-1989/m3u/blob/main/hosts.txt) 优化，以解决非移动用户访问咪咕源的错误解析问题。但测试中发现原贴中需要解析的域名并未出现在我所在的地区，而是出现了其他域名，导致方案无效，在将该域名进行映射后可以在非移动网络下正常观看。所以原方案似乎并不适用于所有非移动用户或不同地区的用户，并且我网络环境下该服务似乎对公共DNS也很敏感。所以制作了一个 [小火箭模块](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/CMCCiTV.sgmodule) ，包含了必要的规则、DNS覆写、以及地址映射，理论上应该支持所有运营商使用咪咕直播源。现在提供 ` Beta 版本 ` 欢迎试用，如果发现在当地网络环境下还存在类似问题，可以进入模块文本根据说明进行调整。
+>>
+>> [![安装模块 CMCCiTV](https://img.shields.io/static/v1?label=安装模块&message=CMCCiTV&color=grey&logo=rocket&logoColor=white&labelColor=blue&messageColor=white)](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://install?module=https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/CMCCiTV.sgmodule "一键安装本模块")
 ------
 
 ## Shadowrocket 收集配置
 
 > [!NOTE]
 > 本单元内容为收集自 ` 官方或靠谱第三方 ` 的使用手册、配置、模块、规则集、脚本等，可放心食用
+> 
+> __需要注意：__ 使用下文中的绝大部分模块文件需要 [正确开启 HTTPS 解密](https://github.com/LOWERTOP/Shadowrocket?tab=readme-ov-file#https%E8%A7%A3%E5%AF%86)
 
-> 1. Shadowrocket 官方的关键词列表暨文档：[优化版本](https://github.com/LOWERTOP/Shadowrocket) + [官方版本](https://github.com/wlxuf/Shadowrocket)
-> 
-> 2. Shadowrocket 很详尽的准官方配置文件：[懒人配置](https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy.conf) + [懒人含代理分组](https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy_group.conf) 
-> 
-> 3. BlackMatrix7 整理的详尽的分流规则集：[分流规则](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Shadowrocket) 
-> 
-> 4. Cuttlefish 墨鱼去广告模块：[模块](https://raw.githubusercontent.com/ddgksf2013/Modules/main/Adblock.sgmodule) + [发布页](https://github.com/ddgksf2013/ddgksf2013)
-> 
-> 5. Johnshall 仅去广告配置文件，可作为规则集使用：[配置](https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_ad_only.conf) + [发布页](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever)
-> 
-> 6. kiwi707 制作的 ` 筛选/规范订阅节点 ` 的脚本：[脚本](https://raw.githubusercontent.com/kiwi707/Shadow-Rocket/refs/heads/main/FilterScript) + [发布页](https://github.com/kiwi707/Shadow-Rocket)
+>__` 官方文件 `__
+>
+>> 本页提供 [Shadowrocket 官方 GitHub 主页](https://github.com/wlxuf/Shadowrocket) 发布的 ` 关键词列表 ` ，也可以称为教程/文件/手册/文档，本页还提供局部优化/改进/微调的版本。同时，官方“线下”推荐的 [懒人配置](https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy.conf) 和 [懒人策略组/代理分组](https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy_group.conf) 配置文件也一并提供一键安装链接。该配置文件的备注非常详尽、仔细，基本上把官方的操作手册备注到了配置文件内，非常适合新人上手和进阶调整
+>>
+>> [![查看文档 官方版本](https://img.shields.io/static/v1?label=查看文档&message=官方版本&color=grey&logo=gitbook&logoColor=white&labelColor=%23B6AB7A&messageColor=white)](https://github.com/wlxuf/Shadowrocket "点击查阅")
+>> [![查看文档 优化版本](https://img.shields.io/static/v1?label=查看文档&message=优化版本&color=grey&logo=gitbook&logoColor=white&labelColor=%23B6AB7A&messageColor=white)](https://github.com/LOWERTOP/Shadowrocket "点击查阅")
+>> [![安装配置 懒人配置](https://img.shields.io/static/v1?label=安装配置&message=懒人配置&color=grey&logo=rocket&logoColor=white&labelColor=orange&messageColor=white)](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://config/add/https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy.conf "一键安装本配置文件")
+>> [![安装配置 代理分组](https://img.shields.io/static/v1?label=安装配置&message=代理分组&color=grey&logo=rocket&logoColor=white&labelColor=orange&messageColor=white)](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://config/add/https://raw.githubusercontent.com/wlxuf/Shadowrocket/main/lazy_group.conf "一键安装本配置文件")
+>
+>__` 分流规则 `__
+>
+>> 本页提供 [blackmatrix7](https://github.com/blackmatrix7) 维护的分类非常详实/丰富的各平台的分流规则、覆写规则等内容入口，它是代理软件首推的代理规则集。该规则不仅适用于 ` Shadowrocket ` 同样有适配其他代理软件的版本
+>> 
+>> [![查看规则 分流规则](https://img.shields.io/static/v1?label=查看规则&message=分流规则&color=grey&logo=todoist&logoColor=white&labelColor=%231797a5&messageColor=white)](https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Shadowrocket "点击查看分类")
+>> [![查看规则 覆写规则](https://img.shields.io/static/v1?label=查看规则&message=覆写规则&color=grey&logo=todoist&logoColor=white&labelColor=%231797a5&messageColor=white)](https://github.com/blackmatrix7/ios_rule_script/tree/master/rewrite/Shadowrocket "点击查看分类")
+>
+>__` 模块/规则/脚本及其他内容 `__
+>
+>> 本页提供多种收集而来的各类模块/规则/脚本等配置的访问入口和一键安装服务，现有包括：
+>> 
+>> __` 模块大合集 `__ : 群内某不愿透漏姓名的 __` 热心群友 `__ 依据 [可莉](https://github.com/luestr/ProxyResource) 的公开模块制作的适用于小火箭的 [模块大合集](https://shadowrocket.module.sagg.us.kg) ，非常推荐小火箭用户试用。使用本合集中的模块需要提前 ` 一键安装 ` [Script-Hub 格式转换模块](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://install?module=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/modules/script-hub.rocket.module) 并正确开启 HTTPS 解密
+>>   
+>> [![查看页面 模块大合集](https://img.shields.io/static/v1?label=查看页面&message=模块大合集&color=grey&logo=html5&logoColor=white&labelColor=%23E44D26&messageColor=white)](https://shadowrocket.module.sagg.us.kg "模块转换合集")
+>> 
+>> __` 墨鱼去广告模块 `__ : [Cuttlefish](https://github.com/ddgksf2013/ddgksf2013) 墨鱼 的去 [广告整合模块](https://raw.githubusercontent.com/ddgksf2013/Modules/main/Adblock.sgmodule) ，模块内含墨鱼去开屏2.0、喜马拉雅、哔哩哔哩、微博、KEEP、知乎、百度网盘、高德地图、小红书、网易云、什么值得买、菜鸟、彩云天气、豆瓣网页等多款软件或服务的去广告规则
+>>   
+>> [![安装模块 墨鱼去广告](https://img.shields.io/static/v1?label=安装模块&message=墨鱼去广告&color=grey&logo=rocket&logoColor=white&labelColor=blue&messageColor=white)](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://install?module=https://raw.githubusercontent.com/ddgksf2013/Modules/main/Adblock.sgmodule "一键安装本模块")
+>> 
+>> __` YouTube 去广告模块 `__ : [Maasea](https://github.com/Maasea) 维护的 [YouTube 去广告模块](https://raw.githubusercontent.com/Maasea/sgmodule/refs/heads/master/YouTube.Enhance.sgmodule) ，支持去除软件内的各类广告以及提供画中画功能。但由于该原版模块是其他软件的原生版本，本文提供 [iab](https://github.com/iab0x00) 的 [转换维护版本](https://raw.githubusercontent.com/iab0x00/ProxyRules/refs/heads/main/Rewrite/YouTubeNoAd.sgmodule) 以供使用
+>>   
+>> [![安装模块 油管去广告](https://img.shields.io/static/v1?label=安装模块&message=油管去广告&color=grey&logo=rocket&logoColor=white&labelColor=blue&messageColor=white)](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://install?module=https://raw.githubusercontent.com/iab0x00/ProxyRules/refs/heads/main/Rewrite/YouTubeNoAd.sgmodule "一键安装本模块")
+>> 
+>> __` Spotify 模块 `__ : [app2smile](https://github.com/app2smile) 维护的 [Spotify / 声破天 模块](https://raw.githubusercontent.com/app2smile/rules/refs/heads/master/module/spotify.module) ，可以去除播放广告、去除随机播放、歌手/专辑列表正常展示
+>>   
+>> [![安装模块 声破天模块](https://img.shields.io/static/v1?label=安装模块&message=声破天模块&color=grey&logo=rocket&logoColor=white&labelColor=blue&messageColor=white)](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://install?module=https://raw.githubusercontent.com/app2smile/rules/refs/heads/master/module/spotify.module "一键安装本模块")
+>> 
+>> __` 酷安去广告模块 `__ : [iab](https://github.com/iab0x00) 维护的 [酷安去广告模块](https://github.com/iab0x00/ProxyRules/blob/main/Rewrite/Coolapk.sgmodule) ，可以去除酷安 APP 的开屏广告和时间线广告
+>>   
+>> [![安装模块 酷安去广告](https://img.shields.io/static/v1?label=安装模块&message=酷安去广告&color=grey&logo=rocket&logoColor=white&labelColor=blue&messageColor=white)](https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://install?module=https://raw.githubusercontent.com/iab0x00/ProxyRules/refs/heads/main/Rewrite/Coolapk.sgmodule "一键安装本模块")
+>> 
+>> __` 去广告规则 `__ : [Johnshall](https://github.com/Johnshall) 维护多款 [小火箭配置文件](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) ，每日8时自动重构。其实，也可以将其 [仅去广告配置](https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_ad_only.conf) 添加为规则集使用（小火箭兼容这个方式），有不错的效果
+>>   
+>> [![查看规则 去广告规则](https://img.shields.io/static/v1?label=查看规则&message=去广告规则&color=grey&logo=todoist&logoColor=white&labelColor=%231797a5&messageColor=white)](https://johnshall.github.io/Shadowrocket-ADBlock-Rules-Forever/sr_ad_only.conf "点击访问规则集")
+>> 
+>> __` 筛选订阅脚本 `__ : [kiwi707](https://github.com/kiwi707) 制作的 ` 筛选/规范订阅节点 ` 的 [脚本](https://github.com/kiwi707/Shadow-Rocket/blob/main/README.md) ，该脚本异常强大，可根据自定义过滤节点并将保留的节点的名称进行标准化和格式化。_使用方式为：点开链接后复制所有内容，粘贴至 ` 订阅页面 ` 的 ` 过滤 ` 区域，根据需要修改后保存即可_
+>>   
+>> [![查看脚本 筛选与修改](https://img.shields.io/static/v1?label=查看脚本&message=筛选与修改&color=grey&logo=javascript&logoColor=grey&labelColor=gold&messageColor=grey)](https://raw.githubusercontent.com/kiwi707/Shadow-Rocket/refs/heads/main/rename.js "点击查看脚本内容")
+>> 
+>> __` 其他仓库 `__ : 本文也推荐 [app2smile](https://github.com/app2smile) 、[QingRex](https://github.com/QingRex) 等模块作者，可以进他们的仓库自行挑选。本文不保证可用性，某些模块的生效或者完全生效可能同样需要使用插件进行转换
+>>   
+>> [![查看仓库 app2smile](https://img.shields.io/static/v1?label=查看仓库&message=app2smile&color=grey&logo=bookstack&logoColor=white&labelColor=%2364BC4B&messageColor=white)](https://github.com/app2smile/rules "点击查看仓库内容")
+>> [![查看仓库 QingRex](https://img.shields.io/static/v1?label=查看仓库&message=QingRex&color=grey&logo=bookstack&logoColor=white&labelColor=%2364BC4B&messageColor=white)](https://github.com/QingRex/LoonKissSurge/tree/main/Surge "点击查看仓库模块")
 
 ------
 
 ## Shadowrocket 配色文件
 
 > [!NOTE]
-> __小火箭配色文件使用说明__
-> * __安装颜色：__ 选择所需配色，在链接代码 ` shadowrocket://color?* ` 右侧点击 “ ❐ ” 符号复制，在 ` 配置 ` 页面点击 “ ✚ ” 号，粘贴并应用
-> * __恢复默认：__ ` APP-设置-颜色-重设颜色 `
+> 本单元为小火箭配色文件相关内容。项目出发点是作者在使用小火箭的过程中对小火箭的配色逐渐感到单调，借助本身是设计出身，遂制作了几个配色文件，没想到反响挺好，后就借助 GitHub 平台逐步发布二十余种自己设计的配色文件，以供大家挑选使用
+>
+>> ` 极其鸣谢 ` 快捷指令作者：[iab](https://t.me/iab000) + [GitHub](https://github.com/iab0x00)
+>> 
+>> ` 特别鸣谢 ` 提供建议好友：[Sage](https://t.me/huskydb)
+
+> [!TIP]
+> * __配色一键安装：__ 选择所需配色，点击 ` 一键安装 `，允许跳转后点击 ` 使用 ` 即可
+> * __复制代码安装：__ 复制所需 ` shadowrocket://color?* ` 配色代码，在 ` 配置 ` 页点击 “ ✚ ” 号，粘贴并应用
+> * __快捷指令安装：__ [点击安装快捷指令](https://www.icloud.com/shortcuts/eab1a031858d4fd480e1bff95b359c2c) ，在 ` 快捷指令 ` 中选择配色并安装
+> * __恢复默认配色：__ ` APP-设置-颜色-重设颜色 `
 
 > [!IMPORTANT]
-> * 因苹果系统限制，小火箭部分细节图标不可自定义配色，且会跟随系统深色/浅色模式改变，自定义小火箭配色时可能会因此特性导致局部细节图标可视度存在问题。建议在使用 `亮底色` 时搭配系统浅色模式，使用 `暗底色` 时搭配系统深色模式，望知悉。另，作者接受 ` 反馈/讨论/投稿 `
-> * 沟通入口：[Shadowrocket 官方频道](https://t.me/ShadowrocketApp)
-> * 配色数量：` 18 `
+> 因苹果系统限制，小火箭部分细节图标不可自定义配色，且会跟随系统深色/浅色模式改变。使用自定义配色时可能会因此特性导致局部细节图标可视度存在问题。建议在使用 `亮底色` 时搭配系统浅色模式，使用 `暗底色` 时搭配系统深色模式
 
 > ` 效果示例：TermiusDark `
 > 
@@ -77,25 +169,21 @@
 ------
 
 > [!CAUTION]
-> __以下为已完成的小火箭配色文件及 ` 快捷指令 `，如需转载请务必 ` 标明作者 ` 或 ` 注明来源 `__
+> __以下为已完成的小火箭配色文件，如需转载请务必 ` 标明作者 ` 或 ` 注明来源 `__
 >
-> __再骂你一遍！连小火箭网站都假冒的家伙是垃圾！！更何况还偷我东西！！！__
-
-> [!TIP]
-> ` 快捷指令 ` 直接安装地址：[快捷指令](https://www.icloud.com/shortcuts/be37b96c10314e0da9a554b61bc18ae0)
-> 
-> ` 极其鸣谢 ` 快捷指令作者：[iab](https://t.me/iab000) + [GitHub](https://github.com/iab0x00)
->
-> ` 特别鸣谢 ` 建议提供好友：[Sage](https://t.me/huskydb)
+>> 再骂一遍！连小火箭网站都假冒的家伙是垃圾！！更何况还偷我东西！！
 
 ------
 
 #### Shadowrocket BrightGold
 > `亮金色` <sup> `亮底色` <sup>
 > 
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%23D38301&logo=rocket&logoColor=grey&labelColor=%23F0F3FA&messageColor=white)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=BrightGold "亮底色配色")
+> 
 > ```ruby
 > shadowrocket://color?NavigationBarColor=%23F7F7F7&NavigationBar2Color=%23F7F7F7&NavigationBarTextColor=%23D38301&NavigationBar2TextColor=%23D38301&TabBarColor=%23F7F7F7&TabBarBorderColor=%23F7F7F7&TabBarSelectedColor=%23D38301&TabBarUnselectedColor=%23D1C0A2&TableBackgroundColor=%23FFFFFF&TableCellBackgroundColor=%23F7F7F7&TableCellSelectedBackgroundColor=%23F7F7F7&TableSeparatorColor=%23FFFFFF&TextFieldTextColor=%23D38301&PlaceholderColor=%23D4A763&TextLabelTextColor=%23D38301&DetailLabelTextColor=%23D4A763&TextLabelDeleteColor=%23ED402E&HeaderFooterTextColor=%23D4A763&SearchFieldBackgroundColor=%23F7F7F7&IndicatorColor=%23D4A763&ButtonIconColor=%23D38301&ButtonNormalColor=%23D38301&ButtonNormal2Color=%23D38301&ButtonNormal3Color=%23D38301&ButtonHighlightedColor=%23FFFFFF&ButtonHighlighted2Color=%23FFFFFF&ButtonHighlighted3Color=%23FFFFFF&ButtonDisabledColor=%23FFFFFF&ButtonDisabled2Color=%23FFFFFF&PingSuccessTextColor=%23D4A763&PingTimeoutTextColor=%23CF5747&DefaultDotColor=%23D38301&HUDBackgroundColor=%23F7F7F7&v=1.0
 > ```
+> 
 > <details>
 > <summary>效果截图</summary>
 > 
@@ -105,12 +193,33 @@
 
 ------
 
+#### Shadowrocket GitHubLight
+> `GitHub 白昼` <sup> `亮底色` <sup>
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%23F0F1F3&logo=rocket&logoColor=grey&labelColor=%23F0F3FA&messageColor=%23161B22)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=GitHubLight "亮底色配色")
+>
+> ```ruby
+> shadowrocket://color?NavigationBarColor=%23FFFFFF&NavigationBar2Color=%23FFFFFF&NavigationBarTextColor=%23161B22&NavigationBar2TextColor=%23161B22&TabBarColor=%23F0F1F3&TabBarBorderColor=%23F0F1F3&TabBarSelectedColor=%23161B22&TabBarUnselectedColor=%2365161B22&TableBackgroundColor=%23FFFFFF&TableCellBackgroundColor=%23F0F1F3&TableCellSelectedBackgroundColor=%23F0F1F3&TableSeparatorColor=%23FFFFFF&TextFieldTextColor=%2359616B&PlaceholderColor=%2359616B&TextLabelTextColor=%23202328&DetailLabelTextColor=%23959BA4&TextLabelDeleteColor=%23E8886D&HeaderFooterTextColor=%23959BA4&SearchFieldBackgroundColor=%23F0F1F3&IndicatorColor=%23F2F7FC&ButtonIconColor=%23959BA4&ButtonNormalColor=%23959BA4&ButtonNormal2Color=%23959BA4&ButtonNormal3Color=%2377787D&ButtonHighlightedColor=%2399FFFFFF&ButtonHighlighted2Color=%23FFFFFF&ButtonHighlighted3Color=%23161B22&ButtonDisabledColor=%23161B22&ButtonDisabled2Color=%2380FFFFFF&PingSuccessTextColor=%2396B96B&PingTimeoutTextColor=%23E8886D&DefaultDotColor=%23DBB556&HUDBackgroundColor=%23F0F1F3&v=1.0
+> ```
+> 
+> <details>
+> <summary>效果截图</summary>
+> 
+> ![shadowrocket](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/img/GitHubLight.PNG)
+> 
+> </details>
+
+------
+
 #### Shadowrocket V2EXDay
 > `V2EX 白昼` <sup> `亮底色` <sup>
-> 
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%23F5F5F5&logo=rocket&logoColor=grey&labelColor=%23F0F3FA&messageColor=%23555555)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=V2EXDay "亮底色配色")
+>
 > ```ruby
 > shadowrocket://color?NavigationBarColor=%23FFFFFF&NavigationBar2Color=%23FFFFFF&NavigationBarTextColor=%23555555&NavigationBar2TextColor=%23555555&TabBarColor=%23FFFFFF&TabBarBorderColor=%23FFFFFF&TabBarSelectedColor=%23555555&TabBarUnselectedColor=%23CCCCCC&TableBackgroundColor=%23FFFFFF&TableCellBackgroundColor=%23F5F5F5&TableCellSelectedBackgroundColor=%23F5F5F5&TableSeparatorColor=%23FFFFFF&TextFieldTextColor=%23555555&PlaceholderColor=%23555555&TextLabelTextColor=%23555555&DetailLabelTextColor=%23778087&TextLabelDeleteColor=%23ED402E&HeaderFooterTextColor=%23778087&SearchFieldBackgroundColor=%23F5F5F5&IndicatorColor=%23555555&ButtonIconColor=%23555555&ButtonNormalColor=%23555555&ButtonNormal2Color=%23555555&ButtonNormal3Color=%2377787D&ButtonHighlightedColor=%2399FFFFFF&ButtonHighlighted2Color=%23FFFFFF&ButtonHighlighted3Color=%23000000&ButtonDisabledColor=%2327282B&ButtonDisabled2Color=%2380FFFFFF&PingSuccessTextColor=%2396B96B&PingTimeoutTextColor=%23CF5747&DefaultDotColor=%23555555&HUDBackgroundColor=%23FFFFFF&v=1.0
 > ```
+> 
 > <details>
 > <summary>效果截图</summary>
 > 
@@ -122,10 +231,13 @@
 
 #### Shadowrocket EcoGreen
 > `生态绿` <sup> `亮底色` <sup>
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%23DDE1DD&logo=rocket&logoColor=grey&labelColor=%23F0F3FA&messageColor=%2347634E)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=EcoGreen "亮底色配色")
 > 
 > ```ruby
 > shadowrocket://color?NavigationBarColor=%23DDE1DD&NavigationBar2Color=%23DDE1DD&NavigationBarTextColor=%2347634E&NavigationBar2TextColor=%2347634E&TabBarColor=%23FFFFFF&TabBarBorderColor=%23FFFFFF&TabBarSelectedColor=%2347634E&TabBarUnselectedColor=%236747634E&TableBackgroundColor=%23FFFFFF&TableCellBackgroundColor=%23DDE1DD&TableCellSelectedBackgroundColor=%23DDE1DD&TableSeparatorColor=%23FFFFFF&TextFieldTextColor=%2359554F&PlaceholderColor=%2359554F&TextLabelTextColor=%2359554F&DetailLabelTextColor=%23ACAAA7&TextLabelDeleteColor=%23ED402E&HeaderFooterTextColor=%23ACAAA7&SearchFieldBackgroundColor=%23DDE1DD&IndicatorColor=%2347634E&ButtonIconColor=%2347634E&ButtonNormalColor=%2347634E&ButtonNormal2Color=%23FFCC40&ButtonNormal3Color=%2377787D&ButtonHighlightedColor=%2399FFFFFF&ButtonHighlighted2Color=%23FFFFFF&ButtonHighlighted3Color=%23000000&ButtonDisabledColor=%2327282B&ButtonDisabled2Color=%2380FFFFFF&PingSuccessTextColor=%2396B96B&PingTimeoutTextColor=%23CF5747&DefaultDotColor=%23FFCC40&HUDBackgroundColor=%23DDE1DD&v=1.0
 > ```
+> 
 > <details>
 > <summary>效果截图</summary>
 > 
@@ -137,10 +249,13 @@
 
 #### Shadowrocket IceCream
 > `淡粉色` <sup> `亮底色` <sup>
-> 
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%23FFEBF4&logo=rocket&logoColor=grey&labelColor=%23F0F3FA&messageColor=%23F5197B)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=IceCream "亮底色配色")
+>
 > ```ruby
 > shadowrocket://color?NavigationBarColor=%2300FFFFFF&NavigationBar2Color=%23FFFFFF&NavigationBarTextColor=%23F5197B&NavigationBar2TextColor=%23F5197B&TabBarColor=%23FFD7E9&TabBarBorderColor=%23FFD7E9&TabBarSelectedColor=%23F5197B&TabBarUnselectedColor=%2367F5197B&TableBackgroundColor=%23FFFFFF&TableCellBackgroundColor=%23FFEBF4&TableCellSelectedBackgroundColor=%23FFD7E9&TableSeparatorColor=%23FFFFFF&TextFieldTextColor=%2399F5197B&PlaceholderColor=%23FFD7E9&TextLabelTextColor=%23F5197B&DetailLabelTextColor=%2399F5197B&TextLabelDeleteColor=%23ED402E&HeaderFooterTextColor=%2399F5197B&SearchFieldBackgroundColor=%23FFEBF4&IndicatorColor=%23F5197B&ButtonIconColor=%23F5197B&ButtonNormalColor=%23F5197B&ButtonNormal2Color=%23F5197B&ButtonNormal3Color=%23F5197B&ButtonHighlightedColor=%23FFEBF4&ButtonHighlighted2Color=%23FFFFFF&ButtonHighlighted3Color=%23FFFFFF&ButtonDisabledColor=%23FFEBF4&ButtonDisabled2Color=%23FFEBF4&PingSuccessTextColor=%23F5197B&PingTimeoutTextColor=%23CF5747&DefaultDotColor=%23F5197B&HUDBackgroundColor=%23FFEBF4&v=1.0
 > ```
+> 
 > <details>
 > <summary>效果截图</summary>
 > 
@@ -152,10 +267,13 @@
 
 #### Shadowrocket Elegant
 > `典雅灰` <sup> `亮底色` <sup>
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%23EBEBEB&logo=rocket&logoColor=grey&labelColor=%23F0F3FA&messageColor=%23383838)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=Elegant "亮底色配色")
 > 
 > ```ruby
 > shadowrocket://color?NavigationBarColor=%2300FFFFFF&NavigationBar2Color=%23FFFFFF&NavigationBarTextColor=%23383838&NavigationBar2TextColor=%23383838&TabBarColor=%23383838&TabBarBorderColor=%2300FFFFFF&TabBarSelectedColor=%23FFFFFF&TabBarUnselectedColor=%2380D7D7D7&TableBackgroundColor=%23FFFFFF&TableCellBackgroundColor=%23EBEBEB&TableCellSelectedBackgroundColor=%23EBEBEB&TableSeparatorColor=%23FFFFFF&TextFieldTextColor=%239E9E9E&PlaceholderColor=%23D7D7D7&TextLabelTextColor=%23383838&DetailLabelTextColor=%239E9E9E&TextLabelDeleteColor=%23ED402E&HeaderFooterTextColor=%239E9E9E&SearchFieldBackgroundColor=%23EBEBEB&IndicatorColor=%23383838&ButtonIconColor=%23383838&ButtonNormalColor=%23383838&ButtonNormal2Color=%23383838&ButtonNormal3Color=%23383838&ButtonHighlightedColor=%23FFFFFF&ButtonHighlighted2Color=%23FFFFFF&ButtonHighlighted3Color=%23FFFFFF&ButtonDisabledColor=%23FFFFFF&ButtonDisabled2Color=%23FFFFFF&PingSuccessTextColor=%23383838&PingTimeoutTextColor=%23CF5747&DefaultDotColor=%23383838&HUDBackgroundColor=%23EBEBEB&v=1.0
 > ```
+> 
 > <details>
 > <summary>效果截图</summary>
 > 
@@ -167,10 +285,13 @@
 
 #### Shadowrocket Cloudy
 > `多云色` <sup> `亮底色` <sup>
-> 
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%23D5DDE0&logo=rocket&logoColor=grey&labelColor=%23F0F3FA&messageColor=%23303548)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=Cloudy "亮底色配色")
+>
 > ```ruby
 > shadowrocket://color?NavigationBarColor=%23D5DDE0&NavigationBar2Color=%23D5DDE0&NavigationBarTextColor=%23303548&NavigationBar2TextColor=%23303548&TabBarColor=%23D5DDE0&TabBarBorderColor=%23D5DDE0&TabBarSelectedColor=%23303548&TabBarUnselectedColor=%2367303548&TableBackgroundColor=%23D5DDE0&TableCellBackgroundColor=%234DBFC6C9&TableCellSelectedBackgroundColor=%23BFC6C9&TableSeparatorColor=%23D5DDE0&TextFieldTextColor=%23303548&PlaceholderColor=%23303548&TextLabelTextColor=%23303548&DetailLabelTextColor=%23454445&TextLabelDeleteColor=%23FF6B6E&HeaderFooterTextColor=%2377787D&SearchFieldBackgroundColor=%2377787D&IndicatorColor=%23FFFFFF&ButtonIconColor=%23303548&ButtonNormalColor=%23303548&ButtonNormal2Color=%23303548&ButtonNormal3Color=%2377787D&ButtonHighlightedColor=%2399FFFFFF&ButtonHighlighted2Color=%23FFFFFF&ButtonHighlighted3Color=%23000000&ButtonDisabledColor=%2327282B&ButtonDisabled2Color=%2380FFFFFF&PingSuccessTextColor=%2326B66B&PingTimeoutTextColor=%23FF6B6E&DefaultDotColor=%23303548&HUDBackgroundColor=%23BFC6C9&v=1.0
 > ```
+> 
 > <details>
 > <summary>效果截图</summary>
 > 
@@ -180,12 +301,142 @@
 
 ------
 
+#### Shadowrocket AyuLight
+> `香鱼色` <sup> `亮底色` <sup>
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%23FAFAFA&logo=rocket&logoColor=grey&labelColor=%23F0F3FA&messageColor=%235C6773)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=AyuLight "亮底色配色")
+>
+> ```ruby
+> shadowrocket://color?NavigationBarColor=%23FAFAFA&NavigationBar2Color=%23FAFAFA&NavigationBarTextColor=%235C6773&NavigationBar2TextColor=%235C6773&TabBarColor=%23FAFAFA&TabBarBorderColor=%23FAFAFA&TabBarSelectedColor=%235C6773&TabBarUnselectedColor=%23655C6773&TableBackgroundColor=%23FAFAFA&TableCellBackgroundColor=%23F1F1F1&TableCellSelectedBackgroundColor=%23F1F1F1&TableSeparatorColor=%23FAFAFA&TextFieldTextColor=%235C6773&PlaceholderColor=%235C6773&TextLabelTextColor=%235C6773&DetailLabelTextColor=%23ABB1B6&TextLabelDeleteColor=%23ED402E&HeaderFooterTextColor=%23ABB1B6&SearchFieldBackgroundColor=%23F5F5F5&IndicatorColor=%23FAFAFA&ButtonIconColor=%235C6773&ButtonNormalColor=%235C6773&ButtonNormal2Color=%235C6773&ButtonNormal3Color=%23ABB1B6&ButtonHighlightedColor=%23FAFAFA&ButtonHighlighted2Color=%23FAFAFA&ButtonHighlighted3Color=%235C6773&ButtonDisabledColor=%235C6773&ButtonDisabled2Color=%23FAFAFA&PingSuccessTextColor=%23339918&PingTimeoutTextColor=%23FD691D&DefaultDotColor=%23FD691D&HUDBackgroundColor=%23FFFFFF&v=1.0
+> ```
+> 
+> <details>
+> <summary>效果截图</summary>
+> 
+> ![shadowrocket](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/img/AyuLight.PNG)
+> 
+> </details>
+
+------
+
+#### Shadowrocket Solarized
+> `烈日色` <sup> `亮底色` <sup>
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%23FDF6E4&logo=rocket&logoColor=grey&labelColor=%23F0F3FA&messageColor=%23657B83)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=Solarized "亮底色配色")
+> 
+> ```ruby
+> shadowrocket://color?NavigationBarColor=%23FDF6E4&NavigationBar2Color=%23FDF6E4&NavigationBarTextColor=%23657B83&NavigationBar2TextColor=%23657B83&TabBarColor=%23FDF6E4&TabBarBorderColor=%23FDF6E4&TabBarSelectedColor=%23657B83&TabBarUnselectedColor=%2366657B83&TableBackgroundColor=%23FDF6E4&TableCellBackgroundColor=%23F3ECDB&TableCellSelectedBackgroundColor=%23F3ECDB&TableSeparatorColor=%23FDF6E4&TextFieldTextColor=%23657B83&PlaceholderColor=%23657B83&TextLabelTextColor=%23657B83&DetailLabelTextColor=%23ABB1B6&TextLabelDeleteColor=%23ED402E&HeaderFooterTextColor=%23ABB1B6&SearchFieldBackgroundColor=%23FDF6E4&IndicatorColor=%23F3ECDB&ButtonIconColor=%23657B83&ButtonNormalColor=%23657B83&ButtonNormal2Color=%23657B83&ButtonNormal3Color=%23ABB1B6&ButtonHighlightedColor=%23FDF6E4&ButtonHighlighted2Color=%23FDF6E4&ButtonHighlighted3Color=%23657B83&ButtonDisabledColor=%23657B83&ButtonDisabled2Color=%23FDF6E4&PingSuccessTextColor=%23339918&PingTimeoutTextColor=%23FD691D&DefaultDotColor=%23FD691D&HUDBackgroundColor=%23F3ECDB&v=1.0
+> ```
+> 
+> <details>
+> <summary>效果截图</summary>
+> 
+> ![shadowrocket](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/img/Solarized.PNG)
+> 
+> </details>
+
+------
+
+#### Shadowrocket LightOwl
+> `鸮腹色` <sup> `亮底色` <sup>
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%23FBFBFB&logo=rocket&logoColor=grey&labelColor=%23F0F3FA&messageColor=%23403F52)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=LightOwl "亮底色配色")
+>
+> ```ruby
+> shadowrocket://color?NavigationBarColor=%23FBFBFB&NavigationBar2Color=%23FBFBFB&NavigationBarTextColor=%23403F52&NavigationBar2TextColor=%23403F52&TabBarColor=%23FBFBFB&TabBarBorderColor=%23FBFBFB&TabBarSelectedColor=%23403F52&TabBarUnselectedColor=%2366403F52&TableBackgroundColor=%23FBFBFB&TableCellBackgroundColor=%23EFF1F2&TableCellSelectedBackgroundColor=%23EFF1F2&TableSeparatorColor=%23FBFBFB&TextFieldTextColor=%23403F52&PlaceholderColor=%2390A7B1&TextLabelTextColor=%23403F52&DetailLabelTextColor=%2390A7B1&TextLabelDeleteColor=%23D15499&HeaderFooterTextColor=%2390A7B1&SearchFieldBackgroundColor=%23FBFBFB&IndicatorColor=%2390A7B1&ButtonIconColor=%23403F52&ButtonNormalColor=%23403F52&ButtonNormal2Color=%23403F52&ButtonNormal3Color=%23403F52&ButtonHighlightedColor=%23FBFBFB&ButtonHighlighted2Color=%23FBFBFB&ButtonHighlighted3Color=%23FBFBFB&ButtonDisabledColor=%23FBFBFB&ButtonDisabled2Color=%23FBFBFB&PingSuccessTextColor=%2352eeb9&PingTimeoutTextColor=%23D15499&DefaultDotColor=%2352eeb9&HUDBackgroundColor=%23FBFBFB&v=1.0
+> ```
+> 
+> <details>
+> <summary>效果截图</summary>
+> 
+> ![shadowrocket](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/img/LightOwl.PNG)
+> 
+> </details>
+
+------
+
+#### Shadowrocket SnowTop
+> `雪顶色` <sup> `亮底色` <sup>
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%23E5E6EC&logo=rocket&logoColor=grey&labelColor=%23F0F3FA&messageColor=%234C4F68)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=SnowTop "亮底色配色")
+>
+> ```ruby
+> shadowrocket://color?NavigationBarColor=%23E5E6EC&NavigationBar2Color=%23E5E6EC&NavigationBarTextColor=%234C4F68&NavigationBar2TextColor=%234C4F68&TabBarColor=%23E5E6EC&TabBarBorderColor=%23E5E6EC&TabBarSelectedColor=%234C4F68&TabBarUnselectedColor=%237F4C4F68&TableBackgroundColor=%23EFF1F5&TableCellBackgroundColor=%23E5E6EC&TableCellSelectedBackgroundColor=%23E5E6EC&TableSeparatorColor=%23FAFAFA&TextFieldTextColor=%234C4F68&PlaceholderColor=%234C4F68&TextLabelTextColor=%234C4F68&DetailLabelTextColor=%23858A9B&TextLabelDeleteColor=%23DB8A7A&HeaderFooterTextColor=%23858A9B&SearchFieldBackgroundColor=%23F5F5F5&IndicatorColor=%23FAFAFA&ButtonIconColor=%234C4F68&ButtonNormalColor=%234C4F68&ButtonNormal2Color=%234C4F68&ButtonNormal3Color=%23858A9B&ButtonHighlightedColor=%23FAFAFA&ButtonHighlighted2Color=%23FAFAFA&ButtonHighlighted3Color=%234C4F68&ButtonDisabledColor=%234C4F68&ButtonDisabled2Color=%23FAFAFA&PingSuccessTextColor=%23D15499&PingTimeoutTextColor=%23DB8A7A&DefaultDotColor=%23DB8A7A&HUDBackgroundColor=%23FFFFFF&v=1.0
+> ```
+> 
+> <details>
+> <summary>效果截图</summary>
+> 
+> ![shadowrocket](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/img/SnowTop.PNG)
+> 
+> </details>
+
+------
+
+#### Shadowrocket RomeDay
+> `假日色` <sup> `亮底色` <sup>
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%23F5E8E7&logo=rocket&logoColor=grey&labelColor=%23F0F3FA&messageColor=%23622229)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=RomeDay "亮底色配色")
+>
+> ```ruby
+> shadowrocket://color?NavigationBarColor=%23F5E8E7&NavigationBar2Color=%23F5E8E7&NavigationBarTextColor=%23622229&NavigationBar2TextColor=%23622229&TabBarColor=%23F5E8E7&TabBarBorderColor=%23F5E8E7&TabBarSelectedColor=%23622229&TabBarUnselectedColor=%2367622229&TableBackgroundColor=%23F5E8E7&TableCellBackgroundColor=%23EEE0DF&TableCellSelectedBackgroundColor=%23EEE0DF&TableSeparatorColor=%23F5E8E7&TextFieldTextColor=%23622229&PlaceholderColor=%23AB8587&TextLabelTextColor=%23622229&DetailLabelTextColor=%23AB8587&TextLabelDeleteColor=%23D15499&HeaderFooterTextColor=%23AB8587&SearchFieldBackgroundColor=%23EEE0DF&IndicatorColor=%23AB8587&ButtonIconColor=%23622229&ButtonNormalColor=%23622229&ButtonNormal2Color=%23622229&ButtonNormal3Color=%23622229&ButtonHighlightedColor=%23F5E8E7&ButtonHighlighted2Color=%23F5E8E7&ButtonHighlighted3Color=%23F5E8E7&ButtonDisabledColor=%23F5E8E7&ButtonDisabled2Color=%23F5E8E7&PingSuccessTextColor=%2320817B&PingTimeoutTextColor=%23D15499&DefaultDotColor=%2320817B&HUDBackgroundColor=%23F5E8E7&v=1.0
+> ```
+> 
+> <details>
+> <summary>效果截图</summary>
+> 
+> ![shadowrocket](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/img/RomeDay.PNG)
+> 
+> </details>
+
+------
+
+#### Shadowrocket PeachFresh
+> `鲜桃色` <sup> `亮底色` <sup>
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%23F4C1A0&logo=rocket&logoColor=grey&labelColor=%23F0F3FA&messageColor=%23510603)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=Peach "亮底色配色")
+>
+> ```ruby
+> shadowrocket://color?NavigationBarColor=%23F4C1A0&NavigationBar2Color=%23F4C1A0&NavigationBarTextColor=%23510603&NavigationBar2TextColor=%23510603&TabBarColor=%23F4C1A0&TabBarBorderColor=%23F4C1A0&TabBarSelectedColor=%23510603&TabBarUnselectedColor=%2366510603&TableBackgroundColor=%23F4C1A0&TableCellBackgroundColor=%23E9B898&TableCellSelectedBackgroundColor=%23E9B898&TableSeparatorColor=%23F4C1A0&TextFieldTextColor=%23510603&PlaceholderColor=%23896852&TextLabelTextColor=%23510603&DetailLabelTextColor=%23896852&TextLabelDeleteColor=%23B2390F&HeaderFooterTextColor=%23896852&SearchFieldBackgroundColor=%23E9B898&IndicatorColor=%23896852&ButtonIconColor=%23510603&ButtonNormalColor=%23510603&ButtonNormal2Color=%23510603&ButtonNormal3Color=%23510603&ButtonHighlightedColor=%23F4C1A0&ButtonHighlighted2Color=%23F4C1A0&ButtonHighlighted3Color=%23F4C1A0&ButtonDisabledColor=%23F4C1A0&ButtonDisabled2Color=%23F4C1A0&PingSuccessTextColor=%2366A06C&PingTimeoutTextColor=%23B2390F&DefaultDotColor=%23B2390F&HUDBackgroundColor=%23F4C1A0&v=1.0
+> ```
+> [点击此处一键安装](https://lowertop.github.io/Shadowrocket-First/theme.html?target=Peach)
+> 
+> <details>
+> <summary>效果截图</summary>
+> 
+> ![shadowrocket](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/img/Peach.PNG)
+> 
+> </details>
+
+------
+
+#### Shadowrocket LightBlue
+> `远峰蓝` <sup> `亮底色` <sup>
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%23F0F3FA&logo=rocket&logoColor=grey&labelColor=%23F0F3FA&messageColor=%23395886)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=LightBlue "亮底色配色")
+>
+> ```ruby
+> shadowrocket://color?NavigationBarColor=%23F0F3FA&NavigationBar2Color=%23F0F3FA&NavigationBarTextColor=%23395886&NavigationBar2TextColor=%23395886&TabBarColor=%23F0F3FA&TabBarBorderColor=%23F0F3FA&TabBarSelectedColor=%23395886&TabBarUnselectedColor=%2366395886&TableBackgroundColor=%23F0F3FA&TableCellBackgroundColor=%23D5DEEF&TableCellSelectedBackgroundColor=%23D5DEEF&TableSeparatorColor=%23F0F3FA&TextFieldTextColor=%23395886&PlaceholderColor=%23628ECB&TextLabelTextColor=%23395886&DetailLabelTextColor=%23628ECB&TextLabelDeleteColor=%23B2390F&HeaderFooterTextColor=%23628ECB&SearchFieldBackgroundColor=%23F0F3FA&IndicatorColor=%23628ECB&ButtonIconColor=%23395886&ButtonNormalColor=%23395886&ButtonNormal2Color=%23395886&ButtonNormal3Color=%23395886&ButtonHighlightedColor=%23F0F3FA&ButtonHighlighted2Color=%23F0F3FA&ButtonHighlighted3Color=%23F0F3FA&ButtonDisabledColor=%23F0F3FA&ButtonDisabled2Color=%23F0F3FA&PingSuccessTextColor=%2366A06C&PingTimeoutTextColor=%23B2390F&DefaultDotColor=%23395886&HUDBackgroundColor=%23F0F3FA&v=1.0
+> ```
+> 
+> <details>
+> <summary>效果截图</summary>
+> 
+> ![shadowrocket](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/img/LightBlue.PNG)
+> 
+> </details>
+
+------
+
 #### Shadowrocket Chrome
 > `金属灰` <sub> `暗底色` <sub>
-> 
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%2380BAFF&logo=rocket&logoColor=white&labelColor=gray&messageColor=%2380BAFF)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=Chrome "暗底色配色")
+>
 > ```ruby
 > shadowrocket://color?NavigationBarColor=%2327282B&NavigationBar2Color=%2327282B&NavigationBarTextColor=%23FFFFFF&NavigationBar2TextColor=%23FFFFFF&TabBarColor=%2327282B&TabBarBorderColor=%2327282B&TabBarSelectedColor=%2380BAFF&TabBarUnselectedColor=%23B3B3B3&TableBackgroundColor=%2327282B&TableCellBackgroundColor=%2333363B&TableCellSelectedBackgroundColor=%2333363B&TableSeparatorColor=%2345464B&TextFieldTextColor=%23FFFFFF&PlaceholderColor=%2380BAFF&TextLabelTextColor=%23FFFFFF&DetailLabelTextColor=%2377787D&TextLabelDeleteColor=%23ED402E&HeaderFooterTextColor=%2377787D&SearchFieldBackgroundColor=%2333363B&IndicatorColor=%23FFFFFF&ButtonIconColor=%2380BAFF&ButtonNormalColor=%23FFFFFF&ButtonNormal2Color=%23CCFFFFFF&ButtonNormal3Color=%2377787D&ButtonHighlightedColor=%2399FFFFFF&ButtonHighlighted2Color=%23FFFFFF&ButtonHighlighted3Color=%23000000&ButtonDisabledColor=%2327282B&ButtonDisabled2Color=%2380FFFFFF&PingSuccessTextColor=%2380BAFF&PingTimeoutTextColor=%23CF5747&DefaultDotColor=%2380BAFF&HUDBackgroundColor=%2327282B&v=1.0
 > ```
+> 
 > <details>
 > <summary>效果截图</summary>
 > 
@@ -197,10 +448,13 @@
 
 #### Shadowrocket BlueSky
 > `深空蓝` <sub> `暗底色` <sub>
-> 
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%232473BD&logo=rocket&logoColor=white&labelColor=gray&messageColor=%23ADBBC8)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=BlueSky "暗底色配色")
+>
 > ```ruby
 > shadowrocket://color?NavigationBarColor=%23181E26&NavigationBar2Color=%23181E26&NavigationBarTextColor=%23ADBBC8&NavigationBar2TextColor=%232473BD&TabBarColor=%23181E26&TabBarBorderColor=%2300000000&TabBarSelectedColor=%232473BD&TabBarUnselectedColor=%23ADBBC8&TableBackgroundColor=%23181E26&TableCellBackgroundColor=%23202935&TableCellSelectedBackgroundColor=%23202935&TableSeparatorColor=%23181E26&TextFieldTextColor=%23ADBBC8&PlaceholderColor=%234F6077&TextLabelTextColor=%23ADBBC8&DetailLabelTextColor=%234F6077&TextLabelDeleteColor=%232473BD&HeaderFooterTextColor=%234F6077&SearchFieldBackgroundColor=%23202935&IndicatorColor=%23ADBBC8&ButtonIconColor=%232473BD&ButtonNormalColor=%23ADBBC8&ButtonNormal2Color=%23ADBBC8&ButtonNormal3Color=%23ADBBC8&ButtonHighlightedColor=%23ADBBC8&ButtonHighlighted2Color=%23ADBBC8&ButtonHighlighted3Color=%23202935&ButtonDisabledColor=%23ADBBC8&ButtonDisabled2Color=%23ADBBC8&PingSuccessTextColor=%232473BD&PingTimeoutTextColor=%234F6077&DefaultDotColor=%232473BD&HUDBackgroundColor=%23202935&v=1.0
 > ```
+> 
 > <details>
 > <summary>效果截图</summary>
 > 
@@ -212,10 +466,13 @@
 
 #### Shadowrocket GodenDark
 > `暗金色` <sub> `暗底色` <sub>
-> 
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%23D4A763&logo=rocket&logoColor=white&labelColor=gray&messageColor=grey)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=GodenDark "暗底色配色")
+>
 > ```ruby
 > shadowrocket://color?NavigationBarColor=%232C2B31&NavigationBar2Color=%232C2B31&NavigationBarTextColor=%23D4A763&NavigationBar2TextColor=%23D4A763&TabBarColor=%232C2B31&TabBarBorderColor=%232C2B31&TabBarSelectedColor=%23D4A763&TabBarUnselectedColor=%23D1C0A2&TableBackgroundColor=%232C2B31&TableCellBackgroundColor=%2338373D&TableCellSelectedBackgroundColor=%2338373D&TableSeparatorColor=%232C2B31&TextFieldTextColor=%23D4A763&PlaceholderColor=%23D1C0A2&TextLabelTextColor=%23D4A763&DetailLabelTextColor=%23D1C0A2&TextLabelDeleteColor=%23ED402E&HeaderFooterTextColor=%23D1C0A2&SearchFieldBackgroundColor=%2338373D&IndicatorColor=%23D1C0A2&ButtonIconColor=%23D4A763&ButtonNormalColor=%23D4A763&ButtonNormal2Color=%23D4A763&ButtonNormal3Color=%23D4A763&ButtonHighlightedColor=%23FFFFFF&ButtonHighlighted2Color=%23FFFFFF&ButtonHighlighted3Color=%23FFFFFF&ButtonDisabledColor=%23FFFFFF&ButtonDisabled2Color=%23FFFFFF&PingSuccessTextColor=%23D1C0A2&PingTimeoutTextColor=%23CF5747&DefaultDotColor=%23D1C0A2&HUDBackgroundColor=%2338373D&v=1.0
 > ```
+> 
 > <details>
 > <summary>效果截图</summary>
 > 
@@ -227,10 +484,13 @@
 
 #### Shadowrocket Fluoresce
 > `荧光色` <sub> `暗底色` <sub>
-> 
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%23B4FE5F&logo=rocket&logoColor=white&labelColor=gray&messageColor=grey)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=Fluoresce "暗底色配色")
+>
 > ```ruby
 > shadowrocket://color?NavigationBarColor=%232C2B31&NavigationBar2Color=%232C2B31&NavigationBarTextColor=%23B4FE5F&NavigationBar2TextColor=%23B4FE5F&TabBarColor=%232C2B31&TabBarBorderColor=%232C2B31&TabBarSelectedColor=%23B4FE5F&TabBarUnselectedColor=%234E7A27&TableBackgroundColor=%232C2B31&TableCellBackgroundColor=%2338373D&TableCellSelectedBackgroundColor=%2338373D&TableSeparatorColor=%232C2B31&TextFieldTextColor=%23B4FE5F&PlaceholderColor=%234E7A27&TextLabelTextColor=%23B4FE5F&DetailLabelTextColor=%234E7A27&TextLabelDeleteColor=%23ED402E&HeaderFooterTextColor=%234E7A27&SearchFieldBackgroundColor=%2338373D&IndicatorColor=%234E7A27&ButtonIconColor=%23B4FE5F&ButtonNormalColor=%23B4FE5F&ButtonNormal2Color=%23B4FE5F&ButtonNormal3Color=%23B4FE5F&ButtonHighlightedColor=%23FFFFFF&ButtonHighlighted2Color=%23FFFFFF&ButtonHighlighted3Color=%23FFFFFF&ButtonDisabledColor=%23FFFFFF&ButtonDisabled2Color=%23FFFFFF&PingSuccessTextColor=%23B4FE5F&PingTimeoutTextColor=%23CF5747&DefaultDotColor=%23B4FE5F&HUDBackgroundColor=%2338373D&v=1.0
 > ```
+> 
 > <details>
 > <summary>效果截图</summary>
 > 
@@ -242,10 +502,13 @@
 
 #### Shadowrocket TermiusDark
 > `终端绿` <sub> `暗底色` <sub>
-> 
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%2321B869&logo=rocket&logoColor=white&labelColor=gray&messageColor=%2321B869)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=TermiusDark "暗底色配色")
+>
 > ```ruby
 > shadowrocket://color?NavigationBarColor=%23141729&NavigationBar2Color=%23141729&NavigationBarTextColor=%2321B869&NavigationBar2TextColor=%2321B869&TabBarColor=%23141729&TabBarBorderColor=%23141729&TabBarSelectedColor=%2321B869&TabBarUnselectedColor=%236621B869&TableBackgroundColor=%23141729&TableCellBackgroundColor=%23141729&TableCellSelectedBackgroundColor=%23141729&TableSeparatorColor=%233321B869&TextFieldTextColor=%2321B869&PlaceholderColor=%236621B869&TextLabelTextColor=%2321B869&DetailLabelTextColor=%236621B869&TextLabelDeleteColor=%23ED402E&HeaderFooterTextColor=%236621B869&SearchFieldBackgroundColor=%23141729&IndicatorColor=%2321B869&ButtonIconColor=%2321B869&ButtonNormalColor=%2321B869&ButtonNormal2Color=%2321B869&ButtonNormal3Color=%2321B869&ButtonHighlightedColor=%2321B869&ButtonHighlighted2Color=%23FFFFFF&ButtonHighlighted3Color=%23FFFFFF&ButtonDisabledColor=%236621B869&ButtonDisabled2Color=%236621B869&PingSuccessTextColor=%2321B869&PingTimeoutTextColor=%23CF5747&DefaultDotColor=%2321B869&HUDBackgroundColor=%233321B869&v=1.0
 > ```
+> 
 > <details>
 > <summary>效果截图</summary>
 > 
@@ -257,10 +520,13 @@
 
 #### Shadowrocket Sunset
 > `余晖紫` <sub> `暗底色` <sub>
-> 
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%239B50DC&logo=rocket&logoColor=white&labelColor=gray&messageColor=grey)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=Sunset "暗底色配色")
+>
 > ```ruby
 > shadowrocket://color?NavigationBarColor=%2330304C&NavigationBar2Color=%2330304C&NavigationBarTextColor=%23FFFFFF&NavigationBar2TextColor=%239B50DC&TabBarColor=%2330304C&TabBarBorderColor=%2300FFFFFF&TabBarSelectedColor=%23FFFFFF&TabBarUnselectedColor=%239B50DC&TableBackgroundColor=%2327273F&TableCellBackgroundColor=%2330304C&TableCellSelectedBackgroundColor=%2330304C&TableSeparatorColor=%2327273F&TextFieldTextColor=%23B3B3B3&PlaceholderColor=%23B3B3B3&TextLabelTextColor=%23FFFFFF&DetailLabelTextColor=%239B50DC&TextLabelDeleteColor=%23ED402E&HeaderFooterTextColor=%239B50DC&SearchFieldBackgroundColor=%2333363B&IndicatorColor=%23B3B3B3&ButtonIconColor=%239B50DC&ButtonNormalColor=%239B50DC&ButtonNormal2Color=%239B50DC&ButtonNormal3Color=%239B50DC&ButtonHighlightedColor=%23B3B3B3&ButtonHighlighted2Color=%23B3B3B3&ButtonHighlighted3Color=%23B3B3B3&ButtonDisabledColor=%23B3B3B3&ButtonDisabled2Color=%23B3B3B3&PingSuccessTextColor=%23FFFFFF&PingTimeoutTextColor=%23CF5747&DefaultDotColor=%239B50DC&HUDBackgroundColor=%2330304C&v=1.0
 > ```
+> 
 > <details>
 > <summary>效果截图</summary>
 > 
@@ -272,10 +538,13 @@
 
 #### Shadowrocket Rose
 > `玫瑰红` <sub> `暗底色` <sub>
-> 
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%23BE1451&logo=rocket&logoColor=white&labelColor=gray&messageColor=grey)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=Rose "暗底色配色")
+>
 > ```ruby
 > shadowrocket://color?NavigationBarColor=%238E0C36&NavigationBar2Color=%238E0C36&NavigationBarTextColor=%23FFFFFF&NavigationBar2TextColor=%23FFFFFF&TabBarColor=%238E0C36&TabBarBorderColor=%238E0C36&TabBarSelectedColor=%23FFFFFF&TabBarUnselectedColor=%23BE1451&TableBackgroundColor=%238E0C36&TableCellBackgroundColor=%23BE1451&TableCellSelectedBackgroundColor=%23BE1451&TableSeparatorColor=%238E0C36&TextFieldTextColor=%23FFFFFF&PlaceholderColor=%23FFFFFF&TextLabelTextColor=%23FFFFFF&DetailLabelTextColor=%23ADADAD&TextLabelDeleteColor=%23ED402E&HeaderFooterTextColor=%23ADADAD&SearchFieldBackgroundColor=%2333363B&IndicatorColor=%23FFFFFF&ButtonIconColor=%23FFFFFF&ButtonNormalColor=%23FFFFFF&ButtonNormal2Color=%238E0C36&ButtonNormal3Color=%238E0C36&ButtonHighlightedColor=%23FFFFFF&ButtonHighlighted2Color=%23FFFFFF&ButtonHighlighted3Color=%23FFFFFF&ButtonDisabledColor=%23FFFFFF&ButtonDisabled2Color=%23FFFFFF&PingSuccessTextColor=%23FFFFFF&PingTimeoutTextColor=%23CF5747&DefaultDotColor=%23FFFFFF&HUDBackgroundColor=%2327282B&v=1.0
 > ```
+> 
 > <details>
 > <summary>效果截图</summary>
 > 
@@ -287,10 +556,13 @@
 
 #### Shadowrocket Violet
 > `紫罗兰` <sub> `暗底色` <sub>
-> 
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%2348426D&logo=rocket&logoColor=white&labelColor=gray&messageColor=%23F0C38E)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=Violet "暗底色配色")
+>
 > ```ruby
 > shadowrocket://color?NavigationBarColor=%23312C51&NavigationBar2Color=%23312C51&NavigationBarTextColor=%23F0C38E&NavigationBar2TextColor=%23F0C38E&TabBarColor=%23312C51&TabBarBorderColor=%23312C51&TabBarSelectedColor=%23F0C38E&TabBarUnselectedColor=%2367F0C38E&TableBackgroundColor=%2348426D&TableCellBackgroundColor=%23312C51&TableCellSelectedBackgroundColor=%23312C51&TableSeparatorColor=%2348426D&TextFieldTextColor=%23F0C38E&PlaceholderColor=%23F0C38E&TextLabelTextColor=%23F0C38E&DetailLabelTextColor=%23F1AA9B&TextLabelDeleteColor=%23ED402E&HeaderFooterTextColor=%23F1AA9B&SearchFieldBackgroundColor=%23312C51&IndicatorColor=%23F0C38E&ButtonIconColor=%23F0C38E&ButtonNormalColor=%23F0C38E&ButtonNormal2Color=%23F0C38E&ButtonNormal3Color=%2377787D&ButtonHighlightedColor=%2399FFFFFF&ButtonHighlighted2Color=%23FFFFFF&ButtonHighlighted3Color=%23000000&ButtonDisabledColor=%2327282B&ButtonDisabled2Color=%2380FFFFFF&PingSuccessTextColor=%2396B96B&PingTimeoutTextColor=%23CF5747&DefaultDotColor=%23F0C38E&HUDBackgroundColor=%23312C51&v=1.0
 > ```
+> 
 > <details>
 > <summary>效果截图</summary>
 > 
@@ -302,10 +574,13 @@
 
 #### Shadowrocket KanagawaWave
 > `神奈川夜` <sub> `暗底色` <sub>
-> 
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%2336363E&logo=rocket&logoColor=white&labelColor=gray&messageColor=%23F0C38E)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=KanagawaWave "暗底色配色")
+>
 > ```ruby
 > shadowrocket://color?NavigationBarColor=%231F1F28&NavigationBar2Color=%231F1F28&NavigationBarTextColor=%23D2CDB2&NavigationBar2TextColor=%23D2CDB2&TabBarColor=%231F1F28&TabBarBorderColor=%231F1F28&TabBarSelectedColor=%23D2CDB2&TabBarUnselectedColor=%2366D2CDB2&TableBackgroundColor=%231F1F28&TableCellBackgroundColor=%2336363E&TableCellSelectedBackgroundColor=%2336363E&TableSeparatorColor=%231F1F28&TextFieldTextColor=%23D2CDB2&PlaceholderColor=%23D2CDB2&TextLabelTextColor=%23D2CDB2&DetailLabelTextColor=%2377787D&TextLabelDeleteColor=%23ED402E&HeaderFooterTextColor=%2377787D&SearchFieldBackgroundColor=%2336363E&IndicatorColor=%23D2CDB2&ButtonIconColor=%23D2CDB2&ButtonNormalColor=%23D2CDB2&ButtonNormal2Color=%23D2CDB2&ButtonNormal3Color=%2377787D&ButtonHighlightedColor=%2399FFFFFF&ButtonHighlighted2Color=%23FFFFFF&ButtonHighlighted3Color=%23000000&ButtonDisabledColor=%2327282B&ButtonDisabled2Color=%2380FFFFFF&PingSuccessTextColor=%2396B96B&PingTimeoutTextColor=%23CF5747&DefaultDotColor=%23D2CDB2&HUDBackgroundColor=%2327282B&v=1.0
 > ```
+> 
 > <details>
 > <summary>效果截图</summary>
 > 
@@ -317,10 +592,13 @@
 
 #### Shadowrocket KanagawaGray
 > `神奈川灰` <sub> `暗底色` <sub>
-> 
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%2336363E&logo=rocket&logoColor=white&labelColor=gray&messageColor=%23F0C38E)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=KanagawaGray "暗底色配色")
+>
 > ```ruby
 > shadowrocket://color?NavigationBarColor=%232A2B32&NavigationBar2Color=%232A2B32&NavigationBarTextColor=%23D2CDB2&NavigationBar2TextColor=%23D2CDB2&TabBarColor=%232A2B32&TabBarBorderColor=%232A2B32&TabBarSelectedColor=%23D2CDB2&TabBarUnselectedColor=%2366D2CDB2&TableBackgroundColor=%232A2B32&TableCellBackgroundColor=%2336363E&TableCellSelectedBackgroundColor=%2336363E&TableSeparatorColor=%232A2B32&TextFieldTextColor=%23D2CDB2&PlaceholderColor=%23D2CDB2&TextLabelTextColor=%23D2CDB2&DetailLabelTextColor=%2377787D&TextLabelDeleteColor=%23ED402E&HeaderFooterTextColor=%2377787D&SearchFieldBackgroundColor=%2336363E&IndicatorColor=%23D2CDB2&ButtonIconColor=%23D2CDB2&ButtonNormalColor=%23D2CDB2&ButtonNormal2Color=%23D2CDB2&ButtonNormal3Color=%2377787D&ButtonHighlightedColor=%2399FFFFFF&ButtonHighlighted2Color=%23FFFFFF&ButtonHighlighted3Color=%23000000&ButtonDisabledColor=%2327282B&ButtonDisabled2Color=%2380FFFFFF&PingSuccessTextColor=%2396B96B&PingTimeoutTextColor=%23CF5747&DefaultDotColor=%23D2CDB2&HUDBackgroundColor=%232A2B32&v=1.0
 > ```
+> 
 > <details>
 > <summary>效果截图</summary>
 > 
@@ -331,10 +609,13 @@
 ------
 #### Shadowrocket CyberPurple
 > `赛博紫` <sub> `暗底色` <sub>
-> 
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%23483F68&logo=rocket&logoColor=white&labelColor=gray&messageColor=%23F0C38E)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=CyberPurple "暗底色配色")
+>
 > ```ruby
 > shadowrocket://color?NavigationBarColor=%23332A57&NavigationBar2Color=%23332A57&NavigationBarTextColor=%23D2CDB2&NavigationBar2TextColor=%23D2CDB2&TabBarColor=%23332A57&TabBarBorderColor=%23332A57&TabBarSelectedColor=%23D2CDB2&TabBarUnselectedColor=%23564F73&TableBackgroundColor=%23332A57&TableCellBackgroundColor=%23483F68&TableCellSelectedBackgroundColor=%23483F68&TableSeparatorColor=%23332A57&TextFieldTextColor=%23D2CDB2&PlaceholderColor=%23D2CDB2&TextLabelTextColor=%23D2CDB2&DetailLabelTextColor=%2377787D&TextLabelDeleteColor=%23FF9998&HeaderFooterTextColor=%2377787D&SearchFieldBackgroundColor=%23483F68&IndicatorColor=%23FFFFFF&ButtonIconColor=%23D2CDB2&ButtonNormalColor=%23D2CDB2&ButtonNormal2Color=%23CCFFFFFF&ButtonNormal3Color=%2377787D&ButtonHighlightedColor=%2399FFFFFF&ButtonHighlighted2Color=%23FFFFFF&ButtonHighlighted3Color=%23000000&ButtonDisabledColor=%2327282B&ButtonDisabled2Color=%2380FFFFFF&PingSuccessTextColor=%232A9089&PingTimeoutTextColor=%23FF9998&DefaultDotColor=%23D2CDB2&HUDBackgroundColor=%23483F68&v=1.0
 > ```
+> 
 > <details>
 > <summary>效果截图</summary>
 > 
@@ -344,16 +625,55 @@
 
 ------
 
+#### Shadowrocket GitHubDark
+> `GitHub 暗夜` <sub> `暗底色` <sub>
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%2322282F&logo=rocket&logoColor=white&labelColor=gray&messageColor=%23F0C38E)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=GitHubDark "暗底色配色")
+>
+> ```ruby
+> shadowrocket://color?NavigationBarColor=%23161B22&NavigationBar2Color=%23161B22&NavigationBarTextColor=%23F2F7FC&NavigationBar2TextColor=%23F2F7FC&TabBarColor=%23161B22&TabBarBorderColor=%23161B22&TabBarSelectedColor=%23F2F7FC&TabBarUnselectedColor=%23959BA4&TableBackgroundColor=%23161B22&TableCellBackgroundColor=%2322282F&TableCellSelectedBackgroundColor=%2322282F&TableSeparatorColor=%23161B22&TextFieldTextColor=%23F2F7FC&PlaceholderColor=%23F2F7FC&TextLabelTextColor=%23F2F7FC&DetailLabelTextColor=%23959BA4&TextLabelDeleteColor=%23E8886D&HeaderFooterTextColor=%23959BA4&SearchFieldBackgroundColor=%2322282F&IndicatorColor=%23F2F7FC&ButtonIconColor=%23959BA4&ButtonNormalColor=%23959BA4&ButtonNormal2Color=%23959BA4&ButtonNormal3Color=%2377787D&ButtonHighlightedColor=%2399FFFFFF&ButtonHighlighted2Color=%23FFFFFF&ButtonHighlighted3Color=%23161B22&ButtonDisabledColor=%23161B22&ButtonDisabled2Color=%2380FFFFFF&PingSuccessTextColor=%2396B96B&PingTimeoutTextColor=%23E8886D&DefaultDotColor=%23DBB556&HUDBackgroundColor=%2322282F&v=1.0
+> ```
+> 
+> <details>
+> <summary>效果截图</summary>
+> 
+> ![shadowrocket](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/img/GitHubDark.PNG)
+> 
+> </details>
+
+------
+
 #### Shadowrocket V2EXNight
 > `V2EX 暗夜` <sub> `暗底色` <sub>
-> 
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%2318222D&logo=rocket&logoColor=white&labelColor=gray&messageColor=%23F0C38E)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=V2EXNight "暗底色配色")
+>
 > ```ruby
 > shadowrocket://color?NavigationBarColor=%2318222D&NavigationBar2Color=%2318222D&NavigationBarTextColor=%239CAEC7&NavigationBar2TextColor=%239CAEC7&TabBarColor=%2318222D&TabBarBorderColor=%2318222D&TabBarSelectedColor=%239CAEC7&TabBarUnselectedColor=%23669CAEC7&TableBackgroundColor=%2322303F&TableCellBackgroundColor=%2318222D&TableCellSelectedBackgroundColor=%2318222D&TableSeparatorColor=%2322303F&TextFieldTextColor=%239CAEC7&PlaceholderColor=%239CAEC7&TextLabelTextColor=%239CAEC7&DetailLabelTextColor=%23738292&TextLabelDeleteColor=%23ED402E&HeaderFooterTextColor=%23738292&SearchFieldBackgroundColor=%2318222D&IndicatorColor=%239CAEC7&ButtonIconColor=%239CAEC7&ButtonNormalColor=%239CAEC7&ButtonNormal2Color=%239CAEC7&ButtonNormal3Color=%2377787D&ButtonHighlightedColor=%2399FFFFFF&ButtonHighlighted2Color=%23FFFFFF&ButtonHighlighted3Color=%23000000&ButtonDisabledColor=%2327282B&ButtonDisabled2Color=%2380FFFFFF&PingSuccessTextColor=%2396B96B&PingTimeoutTextColor=%23CF5747&DefaultDotColor=%239CAEC7&HUDBackgroundColor=%2322303F&v=1.0
 > ```
+> 
 > <details>
 > <summary>效果截图</summary>
 > 
 > ![shadowrocket](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/img/V2EXNIGHT.PNG)
+> 
+> </details>
+
+------
+
+#### Shadowrocket AtomDark
+> `原子灰` <sub> `暗底色` <sub>
+>
+> [![配色 一键安装](https://img.shields.io/static/v1?label=配色&message=一键安装&color=%231E2127&logo=rocket&logoColor=white&labelColor=gray&messageColor=%23F0C38E)](https://lowertop.github.io/Shadowrocket-First/theme.html?target=AtomDark "暗底色配色")
+>
+> ```ruby
+> shadowrocket://color?NavigationBarColor=%231E2127&NavigationBar2Color=%231E2127&NavigationBarTextColor=%23ABB2BF&NavigationBar2TextColor=%23ABB2BF&TabBarColor=%231E2127&TabBarBorderColor=%231E2127&TabBarSelectedColor=%23ABB2BF&TabBarUnselectedColor=%2366ABB2BF&TableBackgroundColor=%231E2127&TableCellBackgroundColor=%23262A31&TableCellSelectedBackgroundColor=%23262A31&TableSeparatorColor=%231E2127&TextFieldTextColor=%23ABB2BF&PlaceholderColor=%23ABB2BF&TextLabelTextColor=%23ABB2BF&DetailLabelTextColor=%23656973&TextLabelDeleteColor=%23D15295&HeaderFooterTextColor=%23656973&SearchFieldBackgroundColor=%2336363E&IndicatorColor=%23ABB2BF&ButtonIconColor=%23ABB2BF&ButtonNormalColor=%23ABB2BF&ButtonNormal2Color=%23ABB2BF&ButtonNormal3Color=%2377787D&ButtonHighlightedColor=%2399FFFFFF&ButtonHighlighted2Color=%23656973&ButtonHighlighted3Color=%231E2127&ButtonDisabledColor=%231E2127&ButtonDisabled2Color=%231E2127&PingSuccessTextColor=%2396B96B&PingTimeoutTextColor=%23D15295&DefaultDotColor=%23ABB2BF&HUDBackgroundColor=%231E2127&v=1.0
+> ```
+> 
+> <details>
+> <summary>效果截图</summary>
+> 
+> ![shadowrocket](https://raw.githubusercontent.com/LOWERTOP/Shadowrocket-First/refs/heads/main/img/AtomDark.PNG)
 > 
 > </details>
 
@@ -449,6 +769,86 @@ _To Be Continued..._
 > ```
 > 
 > </details>
+
+------
+
+## URL Redirector 非标准链接重定向跳转
+
+> [!NOTE]
+> 本单元为 URL Redirector 非标准链接重定向跳转相关内容，主要服务于向 GitHub 等网站发布内容的作者朋友们。本服务的出发点是作者在使用 ` GitHub ` 进行小火箭相关配置设置期间，发现本页不能使用 ` URL-Schemes ` 的链接作为超链一键安装，也就是本页不支持非标准链接的超链，遂萌生了使用 ` HTML ` 进行跳转的想法，后经 ` GPT ` 帮助实现本单元初步设想和现有功能。GitHub 中也有其他类似功能的仓库，可以自行翻阅
+>
+> 当然，本服务虽然主要指向 ` 非标准链接 ` 的跳转，但是类似 HTTP/HTTPS 等类型的 ` 标准链接 ` 也是支持跳转的哦
+
+> [!TIP]
+> 复制以下链接，粘贴在需要跳转的链接前进行访问即可
+> ```ruby
+> https://lowertop.github.io/Shadowrocket-First/redirect.html?url=
+> ```
+
+> 示例
+>> * 你想使用小火箭的 URL-Scheme ` shadowrocket://install?module= ` 一键安装小火箭的这个模块：` https://12345.com/67890.module `
+>> * 但是不是所有站点都支持类似地址的超链，例如本页就不支持……碎碎念……
+>> * 那么你就可以复制转换链接粘贴在待安装地址前访问即可，也就是【跳转链接】+【URL-Scheme 指令】+【模块连接】。完成组合后类似这样： ` https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://install?module=https://12345.com/67890.module `
+>> * 完成跳转成功安装
+>
+> 附小火箭各配置 ` 一键安装 ` 的跳转链接
+>   
+>> 一键安装 ` 配置文件 ` 的跳转链接（后面直接跟配置文件链接）
+>> ```ruby
+>> https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://config/add/
+>> ```
+>>
+>> 一键安装 ` 模块 ` 的跳转链接（后面直接跟模块链接）
+>> ```ruby
+>> https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://install?module=
+>> ```
+>>
+>> 一键添加 ` 订阅/节点 ` 的跳转链接（后面直接跟订阅/节点链接）
+>> ```ruby
+>> https://lowertop.github.io/Shadowrocket-First/redirect.html?url=shadowrocket://add/
+>> ```
+>
+> <details>
+> <summary>点击查看小火箭可用的 URL-Schemes</summary>
+> 
+>> ```ruby
+>> 启动 VPN 隧道
+>> shadowrocket://connect
+>> shadowrocket://open
+>> 
+>> 停止 VPN 隧道
+>> shadowrocket://disconnect
+>> shadowrocket://close
+>> 
+>> 切换 VPN 开关状态
+>> shadowrocket://toggle
+>>
+>> 使用特定节点
+>> shadowrocket://select?s=节点名称
+>> 
+>> 添加 订阅/节点
+>> shadowrocket://add/{url}
+>> 
+>> 安装/使用 配置
+>> shadowrocket://config/add/{url}
+>>
+>> 安装/使用 模块
+>> shadowrocket://install?module={url}
+>> 
+>> 切换全局路由（代理/配置/直连/场景）
+>> shadowrocket://route/proxy
+>> shadowrocket://route/config
+>> shadowrocket://route/direct
+>> shadowrocket://route/scene
+>>
+>> 安装/使用 配色
+>> shadowrocket://color?{配色设置}
+>> ```
+> 
+> </details>
+
+> [!IMPORTANT]
+> 注意：已知小火箭配色文件的设置链接和普通链接编码不同，使用本项目跳转小火箭配色链接可能存在解码问题，除此之外其他链接应该可以正常跳转
 
 ------
 
