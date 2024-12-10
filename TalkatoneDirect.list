@@ -1,14 +1,16 @@
 #!name=Talkatone
-#!desc=Talkatone 代理规则集
-# 本规则集的目的是推荐代理 Talkatone 链接，使其避免使用中国大陆的网络访问。本规则集不可和 “直连规则集” 同时使用，且仅推荐使用相对干净的节点
+#!desc=Talkatone 直连规则集
+# 本规则集的目的是直连 Talkatone 大部分链接，并需要单独添加 tktn.be 为代理，二者结合才可使用
 # 整理作者：https://t.me/LOWERTOP
 # 仓库地址：https://github.com/LOWERTOP/Shadowrocket-First
 # 反馈渠道：https://t.me/ShadowrocketApp
 # 类型选择：RULE-SET
-# 策略建议：PROXY
+# 策略建议：DIRECT
 
 [Rule]
-DOMAIN-SUFFIX,tktn.be
+
+# 切记，需要在规则中单独添加:DOMAIN-SUFFIX,tktn.be,PROXY
+
 DOMAIN-SUFFIX,inner-active.mobi
 DOMAIN-SUFFIX,mobilefuse.com
 DOMAIN-SUFFIX,inmobi.com
